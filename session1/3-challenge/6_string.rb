@@ -6,5 +6,5 @@
 #
 
 def odds_and_evens(string, return_odds)
-
+  string.split('').select.with_index {|s,i| return_odds ? (s if i % 2 != 0) : (s if i % 2 == 0)  }.join 
 end
