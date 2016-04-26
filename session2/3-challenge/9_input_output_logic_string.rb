@@ -24,6 +24,9 @@
 # USER:     BYE
 
 def deaf_grandma
+  while (message = gets.chomp) != "BYE"
+    puts message.length  >0 && message.gsub(/[a-z]/, '').length == message.length ? "NO, NOT SINCE 1938!" : "HUH?! SPEAK UP, SONNY!"
+  end
 
 end
 

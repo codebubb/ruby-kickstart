@@ -6,3 +6,7 @@
 # got_three? ['a', 'a', 'a']  # => true
 # got_three? [1, 2, 1, 1]     # => false
 
+def got_three?(items)
+  items.each.with_index {|item, index| return true if items[index+2] == item && items[index+1] == item}
+  false
+end

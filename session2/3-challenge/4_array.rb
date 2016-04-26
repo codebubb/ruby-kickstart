@@ -9,4 +9,7 @@
 # This time you will have to define the method, it's called: get_squares
 
 
-
+def get_squares(nums)
+  # For each number select if square is in array
+  nums.select {|n| nums.index(n*n) }.sort
+end

@@ -7,6 +7,7 @@
 
 class String
   def every_other_char
+    self.split('').select.with_index { |char, i| char if i.even? }.join
   end
-  
+
 end

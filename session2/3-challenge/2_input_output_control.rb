@@ -20,7 +20,13 @@
 
 def hi_hi_goodbye
   # your code here
-
+  while true
+    puts "Enter a number:"
+    userin = gets.chomp
+    break if userin.downcase == "bye"
+    print "hi " * userin.to_i
+  end
+  print "Goodbye"
 end
 
 
