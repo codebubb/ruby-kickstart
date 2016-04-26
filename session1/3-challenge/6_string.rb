@@ -6,5 +6,6 @@
 #
 
 def odds_and_evens(string, return_odds)
-  string.split('').select.with_index {|s,i| return_odds ? (s if i % 2 != 0) : (s if i % 2 == 0)  }.join 
+#  string.each_char.select.with_index {|s,i| return_odds ^ i.even?  }.join
+string.each_char.with_index.map {|char,ind| char if !(ind.odd? ^ return_odds)}.join
 end

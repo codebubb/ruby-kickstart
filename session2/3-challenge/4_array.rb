@@ -12,4 +12,5 @@
 def get_squares(nums)
   # For each number select if square is in array
   nums.select {|n| nums.index(n*n) }.sort
+
 end
